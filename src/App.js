@@ -61,11 +61,13 @@ add = () =>{
   this.stop = ()=>{
     clearInterval(Intervalo)
   }
+
+  this.restart = ()=>{
+    this.setState({num: 0})
+    clearInterval(Intervalo)
+  }
 }
 
-restart = ()=>{
-  this.setState({num: 0})
-}
 
 
   render(){
