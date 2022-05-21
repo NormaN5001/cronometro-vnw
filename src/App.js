@@ -55,16 +55,16 @@ state={
 
 add = () =>{
   const Intervalo = setInterval(() =>{
-    this.setState({num: this.state.num < 100 ? this.state.num +1 : this.state.num})
-  }, 1000)
+    this.setState({num: this.state.num +1})
+  }, 100)
 
   this.stop = ()=>{
     clearInterval(Intervalo)
   }
 
   this.restart = ()=>{
-    this.setState({num: 0})
-    clearInterval(Intervalo)
+  this.setState({num: 0})
+  clearInterval(Intervalo)
   }
 }
 
