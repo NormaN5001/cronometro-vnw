@@ -12,6 +12,10 @@ state={
 componentDidMount(){
   document.title = "Atividade - VnW"
 }
+componentDidUpdate(){
+  document.title = this.state.msg
+}
+
   render(){
     return(
       <>

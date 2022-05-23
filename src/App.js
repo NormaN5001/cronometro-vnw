@@ -56,7 +56,7 @@ state={
 add = () =>{
   const Intervalo = setInterval(() =>{
     this.setState({num: this.state.num +1})
-  }, 100)
+  }, 1000)
 
   this.stop = ()=>{
     clearInterval(Intervalo)
